@@ -1,0 +1,163 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    style="@style/MainBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="16dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPlayer1"
+        style="@style/TextPlayerName"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:text="@string/player_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSettings" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPlayer2"
+        style="@style/TextPlayerName"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:text="@string/player_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSettings" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvScore"
+        style="@style/TextPlayerName"
+        android:background="@drawable/score_back"
+        android:padding="6dp"
+        android:text="@string/_0_0"
+        app:layout_constraintEnd_toStartOf="@id/tvPlayer2"
+        app:layout_constraintStart_toEndOf="@id/tvPlayer1"
+        app:layout_constraintTop_toBottomOf="@id/btnSettings" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn20"
+        style="@style/ButtonStyle"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn21" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn21"
+        style="@style/ButtonStyle"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn22"
+        style="@style/ButtonStyle"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn21" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn10"
+        style="@style/ButtonStyle"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btn21"
+        app:layout_constraintEnd_toStartOf="@id/btn21" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn11"
+        style="@style/ButtonStyle"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btn21"
+        app:layout_constraintStart_toStartOf="@id/btn21" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn12"
+        style="@style/ButtonStyle"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btn21"
+        app:layout_constraintStart_toEndOf="@id/btn21" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn00"
+        style="@style/ButtonStyle"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/empty"
+        app:layout_constraintBottom_toTopOf="@id/btn11"
+        app:layout_constraintEnd_toStartOf="@id/btn21" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn01"
+        style="@style/ButtonStyle"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btn11"
+        app:layout_constraintStart_toStartOf="@id/btn21" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn02"
+        style="@style/ButtonStyle"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btn11"
+        app:layout_constraintStart_toEndOf="@id/btn21" />
+
+    <View
+        android:id="@+id/vVer1"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn01"
+        app:layout_constraintStart_toEndOf="@id/btn00"
+        app:layout_constraintTop_toTopOf="@id/btn00" />
+
+    <View
+        android:id="@+id/vVer2"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn02"
+        app:layout_constraintStart_toEndOf="@id/btn01"
+        app:layout_constraintTop_toTopOf="@id/btn00" />
+
+    <View
+        android:id="@+id/vHor1"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/btn10"
+        app:layout_constraintEnd_toEndOf="@id/btn02"
+        app:layout_constraintStart_toStartOf="@id/btn00"
+        app:layout_constraintTop_toBottomOf="@id/btn00" />
+
+    <View
+        android:id="@+id/vHor2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/btn20"
+        app:layout_constraintEnd_toEndOf="@id/btn02"
+        app:layout_constraintStart_toStartOf="@id/btn00"
+        app:layout_constraintTop_toBottomOf="@id/btn10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
